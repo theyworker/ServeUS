@@ -1,0 +1,34 @@
+.my-carousel{
+    padding: 0px;
+    margin: 0px;
+}
+
+.carousel-caption>button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 180px;
+}
+
+@media screen and (max-width: 375px) {
+    .my-carousel{
+        position:relative;
+        top:220px;
+    }
+    .carousel-caption>button{
+ background-color: rgba(11, 99, 92, 0.59); /* Green */
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    width: 90px;
+    }
+}

@@ -1,0 +1,88 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="/static/Booknow/assets/js/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link href="/static/Booknow/CSS/indexNavStyle.css" rel="stylesheet">
+    <link href="/static/Booknow/CSS/signupPgCss.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="/static/Booknow/JS/signupJS.js" type="text/javascript" ></script>
+</head>
+<body>
+    
+       <nav>
+        <img src="/static/Booknow/Images/logo.png" alt="Logo">
+        <ul>
+        <a><li>CONTACT</li></a>
+        <a><li>ABOUT</li></a>
+        </ul>
+    </nav>
+    
+    <br />
+<div class="container my-signup" ng-app="myApp" ng-controller="myCtrl">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+         <div class="row myborder">
+             <h4 style="color: #7EB59E; margin: initial; margin-bottom: 10px;">Sign Up Now</h4><hr>
+            <form action="javascript:;" onsubmit="register(this)">
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
+                <input id="txtName" size="60" maxlength="255" class="form-control" placeholder="Full Name" name="UserRegistration[lname]"  type="text">
+            </div>
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope mycolor"></i></span>
+                <input id="txtAddress" size="60" maxlength="255" class="form-control" placeholder="Address" name="UserRegistration[address]"  type="text">
+            </div>
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-phone mycolor"></i></span>
+                <input id="phNo" size="60" maxlength="255" class="form-control" placeholder="Contact Number" name="UserRegistration[contactnumber]"  type="text">
+            </div>
+             
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope mycolor"></i></span>
+                <input id="txtEmail" size="60" maxlength="255" class="form-control" placeholder="Email" name="UserRegistration[password]"  type="text">
+             </div>
+             
+             <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock mycolor"></i></span>
+                <input id="txtPass" size="60" maxlength="255" class="form-control" placeholder="Password" name="UserRegistration[password]"  type="password">
+             </div>
+             <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock mycolor"></i></span>
+                <input id="txtConfirm" size="60" maxlength="255" class="form-control" placeholder="Confirm Password" name="UserRegistration[password]"  type="password">
+             </div>
+             
+             
+             
+             <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-tasks mycolor"></i></span>
+                 <select class="form-control">
+                     <option ng-repeat="x in names" >{{x}}</option>
+                 </select>
+             </div>
+             
+             <div class="row">
+                <div class="col-md-12">
+                    <button class="btn-u pull-left" type="submit">Upload Relevent Documents</button>
+                </div>
+            </div>
+             
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn-u pull-left" id="btnSub">Sign Up</button>
+                </div>
+            </div>
+                </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+      </div>
+
+
+</body></html>

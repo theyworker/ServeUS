@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Booknow/.idea/Booknow.iml" filepath="$PROJECT_DIR$/../Booknow/.idea/Booknow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Home/.idea/Home.iml" filepath="$PROJECT_DIR$/../Home/.idea/Home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../mysite/jobnapper/.idea/jobnapper.iml" filepath="$PROJECT_DIR$/../../mysite/jobnapper/.idea/jobnapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/serveus.iml" filepath="$PROJECT_DIR$/.idea/serveus.iml" />
+    </modules>
+  </component>
+</project>

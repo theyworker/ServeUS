@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="/static/Booknow/assets/js/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link href="/static/Booknow/CSS/indexNavStyle.css" rel="stylesheet">
+    <link href="/static/Booknow/CSS/loginPgCss.css" rel="stylesheet">
+  <script src="/static/Booknow/JS/logSPScript.js" type="text/javascript"></script>
+</head>
+<body>
+     <nav>
+        <img src="/static/Booknow/Images/logo.png" alt="Logo">
+        <ul>
+        <a><li>CONTACT</li></a>
+        <a><li>ABOUT</li></a>
+        </ul>
+    </nav>
+    
+<div class="container">
+  <div class="row">
+
+    <div class="main">
+
+      <h3>Please Log In, or <a href="#">Sign Up</a></h3>
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <a href="#" class="btn btn-lg btn-primary btn-block">Facebook</a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <a href="#" class="btn btn-lg btn-info btn-block">Google</a>
+        </div>
+      </div>
+      <div class="login-or">
+        <hr class="hr-or">
+        <span class="span-or">or</span>
+      </div>
+
+      <form action="javascript:;" onsubmit="validate(this)">
+        <div class="form-group">
+          <label for="inputUsernameEmail">Username or email</label>
+          {% csrf_token %}
+          <input id="txtEmail" type="text" class="form-control" id="inputUsernameEmail">
+        </div>
+        <div class="form-group">
+          <a class="pull-right" href="#">Forgot password?</a>
+          <label for="inputPassword">Password</label>
+          {% csrf_token %}
+          <input id="txtPass" type="password" class="form-control" id="inputPassword">
+        </div>
+        <div class="checkbox pull-right">
+          <label>
+            <input type="checkbox">
+            Remember me </label>
+        </div>
+        <button id="btnSub" type="submit">
+          Log In
+        </button>
+      </form>
+    
+    </div>
+    
+  </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </body></html>
