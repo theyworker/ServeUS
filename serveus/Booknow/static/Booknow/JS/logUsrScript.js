@@ -17,7 +17,7 @@ $(document).ready(function(){
                 },
                 success:function(json){
                     console.log("successfulllllllllll")
-                    if(json.replyBot === "success"){location.href ="/booknow/index/"}
+                    if(json.replyBot === "success"){location.href ="/booknow/profile/"}
 
                 }
             });
@@ -44,7 +44,7 @@ function validate(){
             },
             success:function(json){
                 console.log("successfulllllllllll")
-                if(json.replyBot === "success"){location.href ="/booknow/index/"}
+                if(json.replyBot === "success"){location.href ="/booknow/profile/"}
 
             }
         });
