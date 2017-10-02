@@ -12,7 +12,7 @@ class service_providers(models.Model):
 
 class service_list(models.Model):
     type = models.CharField(max_length=200)
-    service_provider = models.ForeignKey(service_providers, on_delete=models.CASCADE)
+    service_provider = models.ForeignKey(service_providers)
 
 class customer(models.Model):
     C_Name = models.CharField(max_length=200)
@@ -27,8 +27,6 @@ class admin1(models.Model):
     ADemail = models.CharField(max_length=70)
     ADpassword = models.CharField(max_length=100)
 
-
-
 class booking(models.Model):
     description = models.CharField(max_length=255)
     location = models.CharField(max_length=255)
@@ -38,6 +36,7 @@ class booking(models.Model):
     min_price = models.FloatField()
     max_price = models.FloatField()
     category = models.ForeignKey(service_list)
-    status = (('TBA', 'To Be Assigned'),('As', 'Assigned'),('Can','Cancelled'),('C','Completed'))
-    service_provider = models.ForeignKey(service_providers, on_delete=models.CASCADE)
-    customer = models.ForeignKey(customer, on_delete=models.CASCADE)
+    statusChioses = (('TBA', 'To Be Assigned'),('As', 'Assigned'),('Can','Cancelled'),('C','Completed'))
+    status = models.CharField(max_length=4,choices=statusChioses,default='TBA')
+    service_provider = models.ForeignKey(service_providers)
+    customer = models.ForeignKey(customer)

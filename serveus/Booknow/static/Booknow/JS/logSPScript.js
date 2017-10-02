@@ -8,7 +8,7 @@ $(document).ready(function(){
 
             $.ajax({
                 type:'POST',
-                url:'/booknow/verLoginsp/',
+                url:'/booknow/verLoginSP/',
                 data:{
                     usrEmail:email,
                     usrPass:pass,
@@ -17,7 +17,7 @@ $(document).ready(function(){
                 },
                 success:function(json){
                     console.log("successfulllllllllll")
-                    if(json.replyBot === "success"){location.href ="/booknow/#"}
+                    if(json.replyBot === "success"){location.href ="/booknow/index/"}
 
                 }
             });
@@ -35,7 +35,7 @@ function validate(){
 
         $.ajax({
             type:'POST',
-            url:'/booknow/verLoginsp/',
+            url:'/booknow/verLoginSP/',
             data:{
                 usrEmail:email,
                 usrPass:pass,
@@ -44,7 +44,7 @@ function validate(){
             },
             success:function(json){
                 console.log("successfulllllllllll")
-                if(json.replyBot === "success"){location.href ="/booknow/#"}
+                if(json.replyBot === "success"){location.href ="/booknow/index/"}
 
             }
         });

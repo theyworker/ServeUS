@@ -25,7 +25,7 @@ $(document).ready(function(){
                 },
                 success:function(json){
                     console.log(json.replyBot)
-                    if(json.replyBot === "success"){location.href ="/booknow/index.html"}
+                    if(json.replyBot === "success"){location.href ="/jobnapper"}
 
                 }
             });
